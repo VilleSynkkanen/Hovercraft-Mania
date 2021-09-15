@@ -6,15 +6,25 @@ Core features:
 
 Track features:
 -boost pads
--ability charge pads
 -jump pads
 -slow down pads
 -track may be vertical or upside down
 
 TODO:
--track features
+-track features (boost + slow)
 -player hud
+	-track map
+	-speedometer
+	-lap time (with segments)
+	-etc.
 -time trial implementation
 -main menu
 -online leaderboard
 -visuals, sounds & polish
+
+Additional features:
+-multiplayer racing
+-more tracks
+-more vehicles
+-abilities
+-etc.
