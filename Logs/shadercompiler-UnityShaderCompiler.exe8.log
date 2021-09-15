@@ -220,3 +220,4 @@ Cmd: compileSnippet
 Cmd: disassembleShader
  name=Standard platform=d3d11 type=15 mask=6 insize=1082 outsize=2031 ok=1
 
+Cmd: shutdown
