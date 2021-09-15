@@ -1,1 +1,21 @@
--more planning (features etc.)
+IDEA: trackmania + wipeout
+
+Core features:
+-multiplayer racing
+-time trial
+-online leaderboards
+
+Track features:
+-boost pads
+-ability charge pads
+-jump pads
+-slow down pads
+-track may be vertical or upside down
+
+TODO:
+-track design
+-track implementation
+-main menu
+-time trial implementation
+-leaderboards (local & online)
+-multiplayer racing
