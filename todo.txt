@@ -13,9 +13,17 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--track design
--track implementation
--main menu
+-track
+-player hud
 -time trial implementation
+-main menu
 -leaderboards (local & online)
 -multiplayer racing
+
+Track:
+-track texture/material
+-lighting
+-graphics settings
+-walls
+-track features
+-polish

@@ -15,11 +15,11 @@ D:/Programs/Unity/Projects/Hovercraft Racing
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63757
+56217
 Successfully changed project path to: D:/Programs/Unity/Projects/Hovercraft Racing
 D:/Programs/Unity/Projects/Hovercraft Racing
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 55.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,218 +35,288 @@ Initialize mono
 Mono path[0] = 'D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Programs/Unity/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002533 seconds.
+Registered in 0.002596 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 43.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 45.04 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.617 seconds
+- Completed reload, in  1.666 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016254 seconds.
+Registered in 0.016871 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.801 seconds
+- Completed reload, in  1.849 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2084 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 110.8 MB.
-System memory in use after: 110.8 MB.
+System memory in use before: 110.9 MB.
+System memory in use after: 110.9 MB.
 
 Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 2575.
-Total: 26.787000 ms (FindLiveObjects: 0.202800 ms CreateObjectMapping: 0.052000 ms MarkObjects: 26.375400 ms  DeleteObjects: 0.154200 ms)
+Total: 28.724100 ms (FindLiveObjects: 0.213600 ms CreateObjectMapping: 0.061200 ms MarkObjects: 28.297300 ms  DeleteObjects: 0.150100 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Snow mountain tracks/s1.unity
-  artifactKey: Guid(55357f48a3e2b4643b0983826b854f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow mountain tracks/s1.unity using Guid(55357f48a3e2b4643b0983826b854f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9400139594839a5bf712b77cee111653') in 0.013614 seconds
-  Import took 0.016954 seconds .
+  path: Assets/Snow mountain tracks/terrain.asset
+  artifactKey: Guid(d216ab1bb2f42e44bb0c77a040f8eb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/terrain.asset using Guid(d216ab1bb2f42e44bb0c77a040f8eb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tree prefab at index 0 is missing.
+
+ -> (artifact id: '99319a18c5c7c54e1753bd075d582a4c') in 0.078936 seconds
+  Import took 0.082637 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.211113 seconds.
-  path: Assets/Snow mountain tracks/s1Settings.lighting
-  artifactKey: Guid(7894c836435b6e449828ad0bc455442e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow mountain tracks/s1Settings.lighting using Guid(7894c836435b6e449828ad0bc455442e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427db0c338f1f9685dbe31ddf50d679c') in 0.036360 seconds
-  Import took 0.039554 seconds .
+  Time since last request: 0.000322 seconds.
+  path: Assets/Snow mountain tracks/s1/ReflectionProbe-0.exr
+  artifactKey: Guid(c4564a7476d53db45a204d9c459edc03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/s1/ReflectionProbe-0.exr using Guid(c4564a7476d53db45a204d9c459edc03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a25560e62065fe904a8ed98fa7000ee') in 0.079096 seconds
+  Import took 0.082060 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.774516 seconds.
-  path: Assets/Snow mountain tracks/s1Settings.lighting
-  artifactKey: Guid(7894c836435b6e449828ad0bc455442e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow mountain tracks/s1Settings.lighting using Guid(7894c836435b6e449828ad0bc455442e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427db0c338f1f9685dbe31ddf50d679c') in 0.003024 seconds
-  Import took 0.006283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2108.978738 seconds.
-  path: Assets/Snow mountain tracks/Resources
-  artifactKey: Guid(a739afc85f82c6e4484de20af2bc08e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Snow mountain tracks/Resources using Guid(a739afc85f82c6e4484de20af2bc08e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc26e4965ec6c67e22080d636c254f7') in 0.002877 seconds
-  Import took 0.006299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3368.802116 seconds.
-  path: Assets/Models
-  artifactKey: Guid(0fd10491698f64d49a30c86d1f7be139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models using Guid(0fd10491698f64d49a30c86d1f7be139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbcd0bec64dc4edc83422653ad8babb') in 0.002859 seconds
-  Import took 0.006210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.963649 seconds.
-  path: Assets/Models/track.fbx
-  artifactKey: Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/track.fbx using Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54799a0c4b82731debd79014eea6667a') in 0.207508 seconds
-  Import took 0.210875 seconds .
+  Time since last request: 0.000289 seconds.
+  path: Assets/Snow mountain tracks/Terrain textures
+  artifactKey: Guid(22f3533c404577e46af11e495cc1bb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/Terrain textures using Guid(22f3533c404577e46af11e495cc1bb11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb5c2d79822ee30f7f0df46ed59b0ed') in 0.002608 seconds
+  Import took 0.005392 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.016310 seconds.
+Registered in 0.016468 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.695 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 129.1 MB.
-System memory in use after: 129.2 MB.
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2620.
-Total: 27.386800 ms (FindLiveObjects: 0.207400 ms CreateObjectMapping: 0.051700 ms MarkObjects: 26.985800 ms  DeleteObjects: 0.140200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 99.324893 seconds.
-  path: Assets/Models/track.fbx
-  artifactKey: Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/track.fbx using Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77adf8878cda728e17587b9907477b23') in 0.123441 seconds
-  Import took 0.127782 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.728774 seconds.
-  path: Assets/Models/track.fbx
-  artifactKey: Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/track.fbx using Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31abc811e12d55bd79bb756dfcac73c3') in 0.058981 seconds
-  Import took 0.062335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002851 seconds.
-  path: Assets/Models/track.fbx
-  artifactKey: Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/track.fbx using Guid(c02a46660ca0fc042b1ea0a59aea3e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31abc811e12d55bd79bb756dfcac73c3') in 0.064020 seconds
-  Import took 0.067738 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 120.265088 seconds.
-  path: Assets/Prefabs/Hovercraft.prefab
-  artifactKey: Guid(1fcebb9acf66b8340ae396c00780b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Hovercraft.prefab using Guid(1fcebb9acf66b8340ae396c00780b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a2b679f1d9302d33291a4c2182c712') in 0.036520 seconds
-  Import took 0.040675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.175796 seconds.
-  path: Assets/Prefabs/Hovercraft.prefab
-  artifactKey: Guid(1fcebb9acf66b8340ae396c00780b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Hovercraft.prefab using Guid(1fcebb9acf66b8340ae396c00780b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a2b679f1d9302d33291a4c2182c712') in 0.034077 seconds
-  Import took 0.038749 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016160 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.698 seconds
+- Completed reload, in  1.701 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 129.2 MB.
-System memory in use after: 129.3 MB.
+System memory in use after: 129.2 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2623.
-Total: 27.197200 ms (FindLiveObjects: 0.204500 ms CreateObjectMapping: 0.051800 ms MarkObjects: 26.820100 ms  DeleteObjects: 0.117900 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2610.
+Total: 27.073700 ms (FindLiveObjects: 0.220900 ms CreateObjectMapping: 0.051400 ms MarkObjects: 26.681300 ms  DeleteObjects: 0.117800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.902600 seconds.
-  path: Assets/Prefabs/Hovercraft.prefab
-  artifactKey: Guid(1fcebb9acf66b8340ae396c00780b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Hovercraft.prefab using Guid(1fcebb9acf66b8340ae396c00780b0bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b26cc9dc5a5bdaf762151d51a96dce') in 0.075434 seconds
-  Import took 0.080402 seconds .
+  Time since last request: 305.057744 seconds.
+  path: Assets/Snow mountain tracks/s1.unity
+  artifactKey: Guid(55357f48a3e2b4643b0983826b854f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/s1.unity using Guid(55357f48a3e2b4643b0983826b854f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5507e8d4557cf01358e67a8003d9531') in 0.014195 seconds
+  Import took 0.020153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.253879 seconds.
+  path: Assets/Snow mountain tracks/Resources/Models
+  artifactKey: Guid(9c9520dfc96b57244a36a906907b841d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/Resources/Models using Guid(9c9520dfc96b57244a36a906907b841d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e49e702bfa5f9f0a84948c1fdcbd6f') in 0.002584 seconds
+  Import took 0.005880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.142393 seconds.
+  path: Assets/Snow mountain tracks/Resources/Models/concrete.asset
+  artifactKey: Guid(12d78428deb775d448b5cc0326e43380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/Resources/Models/concrete.asset using Guid(12d78428deb775d448b5cc0326e43380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a924ae14a634cc273954ed7016b340ee') in 0.063853 seconds
+  Import took 0.067184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.614862 seconds.
+  path: Assets/Snow mountain tracks/Resources/Models/poles.asset
+  artifactKey: Guid(ebda0cb17de4a154a806302ef3a464f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/Resources/Models/poles.asset using Guid(ebda0cb17de4a154a806302ef3a464f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66989c5002f7554e23dcfc7cf640c7f2') in 0.029749 seconds
+  Import took 0.033121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.416184 seconds.
+  path: Assets/Snow mountain tracks/Resources/Models/road.asset
+  artifactKey: Guid(0a137320cb1170041a34e81b90fabe33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Snow mountain tracks/Resources/Models/road.asset using Guid(0a137320cb1170041a34e81b90fabe33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f052298f3a9dde6103cd851dd765199e') in 0.015270 seconds
+  Import took 0.018529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1563.492155 seconds.
+  path: Assets/Models/tracktest.fbx
+  artifactKey: Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tracktest.fbx using Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e319e6546c063e6051ee25ce87e973b') in 0.097258 seconds
+  Import took 0.100965 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.018081 seconds.
+Registered in 0.017159 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.688 seconds
+- Completed reload, in  1.689 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 129.2 MB.
-System memory in use after: 129.3 MB.
+System memory in use before: 129.4 MB.
+System memory in use after: 129.4 MB.
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2626.
-Total: 27.275700 ms (FindLiveObjects: 0.213300 ms CreateObjectMapping: 0.051400 ms MarkObjects: 26.899100 ms  DeleteObjects: 0.110200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 547.294949 seconds.
-  path: Assets/Models/track2.fbx
-  artifactKey: Guid(f93ef5695936cca458e72b70255815c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/track2.fbx using Guid(f93ef5695936cca458e72b70255815c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b482377ee7b40f422b034fb9435e683') in 0.101256 seconds
-  Import took 0.105938 seconds .
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2626.
+Total: 27.316300 ms (FindLiveObjects: 0.235300 ms CreateObjectMapping: 0.051900 ms MarkObjects: 26.873800 ms  DeleteObjects: 0.152700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.969898 seconds.
-  path: Assets/Models/track2.fbx
-  artifactKey: Guid(f93ef5695936cca458e72b70255815c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/track2.fbx using Guid(f93ef5695936cca458e72b70255815c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2593d32356a9081bc37e6ee32a113dc3') in 0.044150 seconds
-  Import took 0.047733 seconds .
+  Time since last request: 234.467742 seconds.
+  path: Assets/Models/tracktest.fbx
+  artifactKey: Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tracktest.fbx using Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7e90a5fc9e7cf3ccd61a69516d8e2e') in 0.098565 seconds
+  Import took 0.103286 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016084 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.708 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.4 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2629.
+Total: 28.014300 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.051700 ms MarkObjects: 27.588400 ms  DeleteObjects: 0.143200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016570 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.680 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.4 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2631.
+Total: 26.727200 ms (FindLiveObjects: 0.209900 ms CreateObjectMapping: 0.051300 ms MarkObjects: 26.331800 ms  DeleteObjects: 0.132600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2668.260012 seconds.
+  path: Assets/Models/tracktest.fbx
+  artifactKey: Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tracktest.fbx using Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc11d35fbf430409b4304f5d75a5f44') in 0.099592 seconds
+  Import took 0.104207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.625370 seconds.
+  path: Assets/Models/tracktest.fbx
+  artifactKey: Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tracktest.fbx using Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de6b1eb2c6092e4cf897b90f3badd5f') in 0.024825 seconds
+  Import took 0.028253 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016907 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.702 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.3 MB.
+System memory in use after: 129.4 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2634.
+Total: 30.017200 ms (FindLiveObjects: 0.293100 ms CreateObjectMapping: 0.065200 ms MarkObjects: 29.528600 ms  DeleteObjects: 0.128000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.677 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2063 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 129.4 MB.
+System memory in use after: 129.5 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2636.
+Total: 27.491200 ms (FindLiveObjects: 0.218300 ms CreateObjectMapping: 0.051000 ms MarkObjects: 27.101200 ms  DeleteObjects: 0.118900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 668.210918 seconds.
+  path: Assets/Models/tracktest.fbx
+  artifactKey: Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tracktest.fbx using Guid(938b59fa69b58334e87592046684784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70db10846c447cd9435851836c9df2a') in 0.098190 seconds
+  Import took 0.103041 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016634 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.

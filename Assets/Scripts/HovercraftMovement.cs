@@ -118,7 +118,6 @@ public class HovercraftMovement : MonoBehaviour
         if (distanceDifferenceFront < 1f && distanceDifferenceRear < 1f)
             gravityDirection *= (distanceDifferenceFront + distanceDifferenceRear) / 2;
 
-        Debug.DrawRay(transform.position, 1000f * gravityDirection, Color.red);
         rb.AddForce(gravityDirection * gravityMultiplier * rb.mass * Time.deltaTime);
 
 
