@@ -1,7 +1,6 @@
 IDEA: trackmania + wipeout
 
 Core features:
--multiplayer racing
 -time trial
 -online leaderboards
 
@@ -13,17 +12,9 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--track
+-track features
 -player hud
 -time trial implementation
 -main menu
--leaderboards (local & online)
--multiplayer racing
-
-Track:
--track texture/material
--lighting
--graphics settings
--walls
--track features
--polish
+-online leaderboard
+-visuals, sounds & polish

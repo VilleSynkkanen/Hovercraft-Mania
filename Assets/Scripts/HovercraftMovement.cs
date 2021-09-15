@@ -86,7 +86,7 @@ public class HovercraftMovement : MonoBehaviour
         // Front raycast
         RaycastHit frontHit;
         float frontDistance = 0;
-        if (Physics.Raycast(hovercraftFront.position, hovercraftFront.TransformDirection(-Vector3.up), out frontHit, Mathf.Infinity))
+        if (Physics.Raycast(hovercraftFront.position, hovercraftFront.TransformDirection(-Vector3.up), out frontHit, Mathf.Infinity, ~(1 << 8)))
         {
             frontDistance = frontHit.distance;
         }
@@ -94,7 +94,7 @@ public class HovercraftMovement : MonoBehaviour
         // Rear raycast
         RaycastHit rearHit;
         float rearDistance = 0;
-        if (Physics.Raycast(hovercraftRear.position, hovercraftRear.TransformDirection(-Vector3.up), out rearHit, Mathf.Infinity))
+        if (Physics.Raycast(hovercraftRear.position, hovercraftRear.TransformDirection(-Vector3.up), out rearHit, Mathf.Infinity, ~(1 << 8)))
         {
             rearDistance = rearHit.distance;
         }
@@ -143,7 +143,7 @@ public class HovercraftMovement : MonoBehaviour
         // Left raycast
         RaycastHit leftHit;
         float leftDistance = 0;
-        if (Physics.Raycast(hovercraftLeftSide.position, hovercraftLeftSide.TransformDirection(-Vector3.up), out leftHit, Mathf.Infinity))
+        if (Physics.Raycast(hovercraftLeftSide.position, hovercraftLeftSide.TransformDirection(-Vector3.up), out leftHit, Mathf.Infinity, ~(1 << 8)))
         {
             leftDistance = leftHit.distance;
         }
@@ -151,7 +151,7 @@ public class HovercraftMovement : MonoBehaviour
         // Right raycast
         RaycastHit rightHit;
         float rightDistance = 0;
-        if (Physics.Raycast(hovercraftRightSide.position, hovercraftRightSide.TransformDirection(-Vector3.up), out rightHit, Mathf.Infinity))
+        if (Physics.Raycast(hovercraftRightSide.position, hovercraftRightSide.TransformDirection(-Vector3.up), out rightHit, Mathf.Infinity, ~(1 << 8)))
         {
             rightDistance = rightHit.distance;
         }
