@@ -11,12 +11,12 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--player hud
-	-track map
-	-speedometer
-	-lap time (with segments)
-	-etc.
 -time trial implementation
+	-timer
+	-segments
+	-hud
+	-cheat prevention
+	-etc.
 -main menu
 -online leaderboard
 -visuals, sounds & polish
@@ -27,3 +27,8 @@ Additional features:
 -more vehicles
 -abilities
 -etc.
+
+Issues:
+-track map could be a bit more accurate (requires adjustments to track center)
+
+
