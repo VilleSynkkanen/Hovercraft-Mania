@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HovercraftMovement : MonoBehaviour
 {
-    Rigidbody rb;
+    public Rigidbody rb { get; private set; }
     InputController input;
 
     [SerializeField] float thrust;
@@ -20,6 +20,7 @@ public class HovercraftMovement : MonoBehaviour
     [SerializeField] float brakingDragMultiplier;
     [SerializeField] float brakingTurnMultiplier;
     [SerializeField] float brakingTurnForceMultiplier;
+    [SerializeField] float bottomOutProtectionPoint;
 
     [SerializeField] Transform hovercraftFront;
     [SerializeField] Transform hovercraftRear;
@@ -118,6 +119,9 @@ public class HovercraftMovement : MonoBehaviour
         if (distanceDifferenceFront < 1f && distanceDifferenceRear < 1f)
             gravityDirection *= (distanceDifferenceFront + distanceDifferenceRear) / 2;
 
+        if(frontDistance < bottomOutProtectionPoint || rearDistance < bottomOutProtectionPoint)
+            gravityDirection *= bottomOutProtectionPoint / Mathf.Min(frontDistance, rearDistance);
+
         rb.AddForce(gravityDirection * gravityMultiplier * rb.mass * Time.deltaTime);
 
 
@@ -138,7 +142,7 @@ public class HovercraftMovement : MonoBehaviour
         rb.AddTorque(transform.right * pitchMultiplier * pitchCorrectionTorque * Time.deltaTime);
 
 
-        // CORRECT ROLL (same as roll)
+        // CORRECT ROLL (same as pitch)
 
         // Left raycast
         RaycastHit leftHit;

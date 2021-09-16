@@ -257,6 +257,7 @@ MonoBehaviour:
   brakingDragMultiplier: 0.4
   brakingTurnMultiplier: 1.2
   brakingTurnForceMultiplier: -0.95
+  bottomOutProtectionPoint: 0.5
   hovercraftFront: {fileID: 4460330203512481426}
   hovercraftRear: {fileID: 3111413583990472682}
   hovercraftLeftSide: {fileID: 1389545758}

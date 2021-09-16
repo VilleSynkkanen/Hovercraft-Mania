@@ -11,7 +11,6 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--track features (boost + slow)
 -player hud
 	-track map
 	-speedometer
