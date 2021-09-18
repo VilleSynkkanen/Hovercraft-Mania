@@ -12,14 +12,11 @@ Track features:
 
 TODO:
 -time trial implementation
-	-timer
-	-segments
-	-hud
-	-cheat prevention
-	-etc.
+	-invalidating lap when touching wall
+	-saving locally
 -main menu
 -online leaderboard
--visuals, sounds & polish
+-visuals, sounds, optimizations & polish
 
 Additional features:
 -multiplayer racing
@@ -31,4 +28,5 @@ Additional features:
 Issues:
 -track map could be a bit more accurate (requires adjustments to track center)
 
+Best lap: 35.038 s
 
