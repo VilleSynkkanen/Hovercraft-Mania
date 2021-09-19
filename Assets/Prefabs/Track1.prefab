@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfSectors: 3
+  trackName: Track0
 --- !u!1 &1497629649
 GameObject:
   m_ObjectHideFlags: 0

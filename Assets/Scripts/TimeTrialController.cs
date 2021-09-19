@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class TimeTrialController : MonoBehaviour
@@ -7,6 +8,7 @@ public class TimeTrialController : MonoBehaviour
     public static TimeTrialController instance { get; private set; }
 
     [SerializeField] int numberOfSectors;
+    [SerializeField] string trackName;
 
     public float[] sectorTimes { get; private set; }
     public float[] bestSectorTimes { get; private set; }
@@ -19,6 +21,9 @@ public class TimeTrialController : MonoBehaviour
     public bool validLap { get; private set; }
 
     bool bestSectorsArrayGenerated;
+
+    string username;
+    LapData data;
 
     void Awake()
     {
@@ -37,6 +42,10 @@ public class TimeTrialController : MonoBehaviour
         onLap = false;
         validLap = false;
         bestSectorsArrayGenerated = false;
+        username = "Developer";         // PLACEHOLDER
+
+        if(LoadLapInfo())
+            TimeTrialHud.instance.UpdateBestLap();
     }
 
     void Update()
@@ -100,6 +109,7 @@ public class TimeTrialController : MonoBehaviour
                     }
 
                     TimeTrialHud.instance.UpdateBestLap();
+                    SaveLapInfo();
                 }
                 else
                 {
@@ -144,5 +154,46 @@ public class TimeTrialController : MonoBehaviour
     {
         if (onLap)
             validLap = false;
+    }
+
+    bool LoadLapInfo()
+    {
+        string fileName = "LapData_" + username + "_" + trackName;
+        if(File.Exists(Application.persistentDataPath + "/" + fileName))
+        {
+            string json = File.ReadAllText(Application.persistentDataPath + "/" + fileName);
+            data = JsonUtility.FromJson<LapData>(json);
+            bestTime = data.bestTime;
+
+            bestSectorTimes = new float[data.bestSectorTimes.Length];
+            for (int i = 0; i < bestSectorTimes.Length; i++)
+            {
+                bestSectorTimes[i] = data.bestSectorTimes[i];
+            }
+
+            bestLapSectorTimes = new float[data.bestLapSectorTimes.Length];
+            for (int i = 0; i < bestLapSectorTimes.Length; i++)
+            {
+                bestLapSectorTimes[i] = data.bestLapSectorTimes[i];
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    void SaveLapInfo()
+    {
+        data = new LapData();
+        data.username = username;
+        data.trackName = trackName;
+        data.bestTime = bestTime;
+        data.bestSectorTimes = bestSectorTimes;
+        data.bestLapSectorTimes = bestLapSectorTimes;
+
+        string json = JsonUtility.ToJson(data);
+        string fileName = "LapData_" + data.username + "_" + data.trackName;
+        File.WriteAllText(Application.persistentDataPath + "/" + fileName, json);
     }
 }
