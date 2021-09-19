@@ -11,12 +11,11 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--time trial implementation
-	-invalidating lap when touching wall
-	-saving locally
+-saving times locally
 -main menu
--online leaderboard
--visuals, sounds, optimizations & polish
+-keyboard controls
+-online leaderboard (with dev time to challenge)
+-visuals, sounds, code optimizations & polish
 
 Additional features:
 -multiplayer racing
@@ -28,5 +27,6 @@ Additional features:
 Issues:
 -track map could be a bit more accurate (requires adjustments to track center)
 
-Best lap: 35.038 s
+Best lap: 34.838 s
+Best sectors: s1: 10.777 s, s2: 10.256 s, s3: 13.805 s
 

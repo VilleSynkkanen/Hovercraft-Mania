@@ -8,15 +8,17 @@ public class TimeTrialController : MonoBehaviour
 
     [SerializeField] int numberOfSectors;
 
-    public float[] sectorTimes; //{ get; private set; }
-    public float[] bestSectorTimes; //{ get; private set; }
-    public float[] bestLapSectorTimes; //{ get; private set; }
-    public float currentTime; //{ get; private set; }
-    public float currentSectorTime; //{ get; private set; }
-    public float bestTime; //{ get; private set; }
-    public int currentSector; //{ get; private set; }
-    public bool onLap; //{ get; private set; }
-    public bool validLap; //{ get; private set; }
+    public float[] sectorTimes { get; private set; }
+    public float[] bestSectorTimes { get; private set; }
+    public float[] bestLapSectorTimes { get; private set; }
+    public float currentTime { get; private set; }
+    public float currentSectorTime { get; private set; }
+    public float bestTime { get; private set; }
+    public int currentSector { get; private set; }
+    public bool onLap { get; private set; }
+    public bool validLap { get; private set; }
+
+    bool bestSectorsArrayGenerated;
 
     void Awake()
     {
@@ -34,6 +36,7 @@ public class TimeTrialController : MonoBehaviour
     {
         onLap = false;
         validLap = false;
+        bestSectorsArrayGenerated = false;
     }
 
     void Update()
@@ -57,7 +60,7 @@ public class TimeTrialController : MonoBehaviour
                     sectorTimes[sectorTimes.Length - 1] = currentSectorTime;
 
                     // Compare times and save them
-                    if (bestSectorTimes.Length > 0)
+                    if (bestSectorsArrayGenerated)
                     {
                         // Existing times
 
@@ -85,6 +88,7 @@ public class TimeTrialController : MonoBehaviour
 
                         bestSectorTimes = new float[numberOfSectors];
                         bestLapSectorTimes = new float[numberOfSectors];
+                        bestSectorsArrayGenerated = true;
 
                         for (int i = 0; i < numberOfSectors; i++)
                         {
@@ -95,6 +99,7 @@ public class TimeTrialController : MonoBehaviour
                         bestTime = currentTime;
                     }
 
+                    TimeTrialHud.instance.UpdateBestLap();
                 }
                 else
                 {
@@ -110,6 +115,8 @@ public class TimeTrialController : MonoBehaviour
             currentSector = 0;
             currentTime = 0;
             currentSectorTime = 0;
+
+            TimeTrialHud.instance.UpdateSectors();
         }
         else
         {
@@ -121,6 +128,8 @@ public class TimeTrialController : MonoBehaviour
                     sectorTimes[num - 1] = currentSectorTime;
                     currentSectorTime = 0;
                     currentSector = num;
+
+                    TimeTrialHud.instance.UpdateSectors();
                 }
                 else
                 {
@@ -129,5 +138,11 @@ public class TimeTrialController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void InvalidateLap()
+    {
+        if (onLap)
+            validLap = false;
     }
 }
