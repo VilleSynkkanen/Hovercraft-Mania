@@ -14,7 +14,7 @@ public class HovercraftMovement : MonoBehaviour
     [SerializeField] float gravityMultiplier;
     [SerializeField] float hoverHeight;
     [SerializeField] float rollCorrectionTorque;
-    [SerializeField] float rollAngleSmootingPoint;
+    [SerializeField] float rollAngleSmoothingPoint;
     [SerializeField] float pitchCorrectionTorque;
     [SerializeField] float pitchAngleSmootingPoint;
     [SerializeField] float brakingDragMultiplier;
@@ -42,6 +42,9 @@ public class HovercraftMovement : MonoBehaviour
     {
         input = GetComponent<InputController>();     
         rb = GetComponent<Rigidbody>();
+
+        input.Reset += OnReset;
+        input.Pause += OnPause;
 
         rotation = transform.rotation.eulerAngles;
         hovercraftLength = (hovercraftFront.position - hovercraftRear.position).magnitude;
@@ -164,9 +167,9 @@ public class HovercraftMovement : MonoBehaviour
         float rollAngle = Mathf.Tan(distanceDeltaRoll / hovercraftWidth);
 
         float rollMultiplier = 1;
-        if(Mathf.Abs(rollAngle) < rollAngleSmootingPoint)
+        if(Mathf.Abs(rollAngle) < rollAngleSmoothingPoint)
         {
-            rollMultiplier *= Mathf.Abs(rollAngle) / rollAngleSmootingPoint;
+            rollMultiplier *= Mathf.Abs(rollAngle) / rollAngleSmoothingPoint;
         }
 
 
@@ -174,5 +177,22 @@ public class HovercraftMovement : MonoBehaviour
             rollMultiplier *= -1;
 
         rb.AddTorque(transform.forward * rollMultiplier * rollCorrectionTorque * Time.deltaTime);
+    }
+
+    void OnReset()
+    {
+        rb.velocity = Vector3.zero;
+        TimeTrialController.instance.ResetVehicle();
+    }
+
+    void OnPause()
+    {
+        TimeTrialController.instance.Pause();
+    }
+
+    void OnDestroy()
+    {
+        input.Reset -= OnReset;
+        input.Pause -= OnPause;
     }
 }

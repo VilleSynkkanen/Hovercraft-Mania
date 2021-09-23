@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class TimeTrialController : MonoBehaviour
 {
@@ -12,6 +14,11 @@ public class TimeTrialController : MonoBehaviour
     [SerializeField] GameObject hovercraft;
     [SerializeField] Transform spawn;
     [SerializeField] Transform trackCenter;
+    [SerializeField] GameObject pauseMenu;
+    [SerializeField] EventSystem eventSystem;
+    [SerializeField] GameObject pauseMenuSelectedButton;
+
+    GameObject player;
 
     public float[] sectorTimes { get; private set; }
     public float[] bestSectorTimes { get; private set; }
@@ -24,6 +31,7 @@ public class TimeTrialController : MonoBehaviour
     public bool validLap { get; private set; }
 
     bool bestSectorsArrayGenerated;
+    bool paused;
 
     string username;
     LapData data;
@@ -42,9 +50,10 @@ public class TimeTrialController : MonoBehaviour
 
     void Start()
     {
-        GameObject player = Instantiate(hovercraft, spawn.position, spawn.rotation);
+        player = Instantiate(hovercraft, spawn.position, spawn.rotation);
         player.GetComponent<HovercraftHud>().SetTrackCenter(trackCenter);
 
+        paused = false;
         onLap = false;
         validLap = false;
         bestSectorsArrayGenerated = false;
@@ -64,6 +73,32 @@ public class TimeTrialController : MonoBehaviour
             currentSectorTime += Time.deltaTime;
             currentTime += Time.deltaTime;
         }
+    }
+
+    public void ResetVehicle()
+    {
+        onLap = false;
+        player.transform.position = spawn.position;
+        player.transform.rotation = spawn.rotation;
+    }
+
+    public void Pause()
+    {
+        paused = !paused;
+        pauseMenu.SetActive(paused);
+        if (paused)
+        {
+            eventSystem.SetSelectedGameObject(pauseMenuSelectedButton);
+            Time.timeScale = 0;
+        }
+        else
+            Time.timeScale = 1;
+    }
+
+    public void Quit()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void StartSector(int num)

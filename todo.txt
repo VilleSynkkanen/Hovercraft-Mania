@@ -11,10 +11,9 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--keyboard controls
 -statistics feature
--online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -visuals, sounds, main menu, code optimizations, project settings, polish etc.
+-online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 
 Additional features:
 -multiplayer racing
@@ -25,6 +24,7 @@ Additional features:
 
 Issues:
 -track map could be a bit more accurate (requires adjustments to track center)
+-infinite force on rb error
 
 Lap data: {"username":"Developer","trackName":"Track0","bestSectorTimes":[10.801607131958008,9.902227401733399,13.741972923278809],"bestLapSectorTimes":[10.801607131958008,9.902227401733399,13.741972923278809],"bestTime":34.445804595947269}
 
