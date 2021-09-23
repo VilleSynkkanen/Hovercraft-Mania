@@ -10,12 +10,12 @@ public class ModelRotator : MonoBehaviour
 
     void Start()
     {
-        rotation = transform.rotation.eulerAngles.y;
+        rotation = transform.localRotation.eulerAngles.z;
     }
 
     void Update()
     {
         rotation += rotationSpeed * Time.deltaTime;
-        transform.rotation = Quaternion.Euler(0, rotation, 0);
+        transform.localRotation = Quaternion.Euler(0, 0, rotation);
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class HovercraftHud : MonoBehaviour
 {
@@ -10,16 +11,19 @@ public class HovercraftHud : MonoBehaviour
     [SerializeField] float needleRotationMultiplier;
     [SerializeField] float maxNeedleRotationPerSecond;
     [SerializeField] RectTransform playerBlip;
-    [SerializeField] float trackMapPosMultiplier;
+    [SerializeField] Image trackMap;
 
     Transform trackCenter;
     HovercraftMovement movement;
     float speed;
+    float trackMapPosMultiplier;
 
     // Start is called before the first frame update
     void Awake()
     {
         movement = GetComponent<HovercraftMovement>();
+        trackMap.sprite = TimeTrialController.instance.TrackMapImage;
+        trackMapPosMultiplier = TimeTrialController.instance.TrackMapPosMultiplier;
     }
 
     // Update is called once per frame

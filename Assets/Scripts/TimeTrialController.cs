@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class TimeTrialController : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class TimeTrialController : MonoBehaviour
     [SerializeField] EventSystem eventSystem;
     [SerializeField] GameObject pauseMenuSelectedButton;
 
+    [SerializeField] Sprite trackMapImage;
+    [SerializeField] float trackMapPosMultiplier;
+
     GameObject player;
 
     public float[] sectorTimes { get; private set; }
@@ -29,6 +33,8 @@ public class TimeTrialController : MonoBehaviour
     public int currentSector { get; private set; }
     public bool onLap { get; private set; }
     public bool validLap { get; private set; }
+    public Sprite TrackMapImage { get => trackMapImage; }
+    public float TrackMapPosMultiplier { get => trackMapPosMultiplier; }
 
     bool bestSectorsArrayGenerated;
     bool paused;

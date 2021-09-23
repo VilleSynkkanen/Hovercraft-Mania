@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: trackName
       value: RingOfSkillReverse
       objectReference: {fileID: 0}
+    - target: {fileID: 861624185, guid: 472903fe68b287141b0ff4301d8b4a90, type: 3}
+      propertyPath: trackMapImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d6056934746b8d4fa23e04166ab15c0, type: 3}
     - target: {fileID: 1903953265, guid: 472903fe68b287141b0ff4301d8b4a90, type: 3}
       propertyPath: m_Name
       value: Sector2

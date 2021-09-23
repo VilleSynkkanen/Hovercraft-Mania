@@ -11,19 +11,16 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
--statistics feature
--polish
--online leaderboard (with dev time to challenge, cheat prevention [binary save?])
-
-Polish
--graphics
--visual effects
--sounds
--menu look & functionality
--code optimizations
+-improved time trial hud look
+-icon, cursor etc.
 -project settings
--solve issues
--general polish & QoL features
+-visual effects
+-statistics feature
+-sounds
+-options
+-credits
+-general polish, code optimizations & QoL features
+-online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 
 Additional features:
 -multiplayer racing
