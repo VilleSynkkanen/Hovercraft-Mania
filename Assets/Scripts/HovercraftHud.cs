@@ -10,9 +10,9 @@ public class HovercraftHud : MonoBehaviour
     [SerializeField] float needleRotationMultiplier;
     [SerializeField] float maxNeedleRotationPerSecond;
     [SerializeField] RectTransform playerBlip;
-    [SerializeField] Transform trackCenter;
     [SerializeField] float trackMapPosMultiplier;
 
+    Transform trackCenter;
     HovercraftMovement movement;
     float speed;
 
@@ -44,5 +44,10 @@ public class HovercraftHud : MonoBehaviour
 
         Vector3 playerPos = movement.transform.position - trackCenter.position;
         playerBlip.anchoredPosition = trackMapPosMultiplier * new Vector3(playerPos.x, playerPos.z, 0);
+    }
+
+    public void SetTrackCenter(Transform center)
+    {
+        trackCenter = center;
     }
 }

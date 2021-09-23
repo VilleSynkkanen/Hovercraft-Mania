@@ -12,12 +12,9 @@ Track features:
 
 TODO:
 -keyboard controls
--reversed track
 -statistics feature
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
--visuals, sounds, code optimizations, project settings etc.
--main menu
--polish
+-visuals, sounds, main menu, code optimizations, project settings, polish etc.
 
 Additional features:
 -multiplayer racing
@@ -28,7 +25,6 @@ Additional features:
 
 Issues:
 -track map could be a bit more accurate (requires adjustments to track center)
--slower lap times get saved over faster ones
 
 Lap data: {"username":"Developer","trackName":"Track0","bestSectorTimes":[10.801607131958008,9.902227401733399,13.741972923278809],"bestLapSectorTimes":[10.801607131958008,9.902227401733399,13.741972923278809],"bestTime":34.445804595947269}
 

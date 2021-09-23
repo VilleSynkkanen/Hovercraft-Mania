@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
-using UnityEngine.Events;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject[] menus;
-    
+    [SerializeField] ChosenTrack track;
+
     int activeMenu;
 
     void Start()
@@ -23,9 +22,10 @@ public class MainMenu : MonoBehaviour
         menus[i].SetActive(true);
     }
 
-    public void Play(string trackName)
+    public void Play(int trackIndex)
     {
-        SceneManager.LoadScene(trackName);
+        track.chosenTrack = trackIndex;
+        SceneManager.LoadScene("TimeTrial");
     }
 
     public void Quit()

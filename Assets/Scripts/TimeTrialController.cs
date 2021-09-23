@@ -9,6 +9,9 @@ public class TimeTrialController : MonoBehaviour
 
     [SerializeField] int numberOfSectors;
     [SerializeField] string trackName;
+    [SerializeField] GameObject hovercraft;
+    [SerializeField] Transform spawn;
+    [SerializeField] Transform trackCenter;
 
     public float[] sectorTimes { get; private set; }
     public float[] bestSectorTimes { get; private set; }
@@ -39,13 +42,19 @@ public class TimeTrialController : MonoBehaviour
 
     void Start()
     {
+        GameObject player = Instantiate(hovercraft, spawn.position, spawn.rotation);
+        player.GetComponent<HovercraftHud>().SetTrackCenter(trackCenter);
+
         onLap = false;
         validLap = false;
         bestSectorsArrayGenerated = false;
         username = "Developer";         // PLACEHOLDER
 
         if(LoadLapInfo())
+        {
+            bestSectorsArrayGenerated = true;
             TimeTrialHud.instance.UpdateBestLap();
+        } 
     }
 
     void Update()
