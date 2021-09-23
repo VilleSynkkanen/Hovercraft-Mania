@@ -12,8 +12,18 @@ Track features:
 
 TODO:
 -statistics feature
--visuals, sounds, main menu, code optimizations, project settings, polish etc.
+-polish
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
+
+Polish
+-graphics
+-visual effects
+-sounds
+-menu look & functionality
+-code optimizations
+-project settings
+-solve issues
+-general polish & QoL features
 
 Additional features:
 -multiplayer racing
