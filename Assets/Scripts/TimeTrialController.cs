@@ -36,7 +36,7 @@ public class TimeTrialController : MonoBehaviour
     public Sprite TrackMapImage { get => trackMapImage; }
     public float TrackMapPosMultiplier { get => trackMapPosMultiplier; }
 
-    bool bestSectorsArrayGenerated;
+    public bool bestSectorsArrayGenerated { get; private set; }
     bool paused;
 
     string username;
@@ -177,6 +177,7 @@ public class TimeTrialController : MonoBehaviour
             currentSectorTime = 0;
 
             TimeTrialHud.instance.UpdateSectors();
+            TimeTrialHud.instance.ResetSectors();
         }
         else
         {

@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         activeMenu = 0;
+        Cursor.visible = true;
     }
     
     public void ActivateMenu(int i)
