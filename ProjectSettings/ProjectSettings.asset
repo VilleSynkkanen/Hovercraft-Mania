@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Strafe Productions
-  productName: Hovercraft Mania
+  productName: HovercraftMania
   defaultCursor: {fileID: 2800000, guid: 01af8ad3c6981fc4a9ea2404874aaf40, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}

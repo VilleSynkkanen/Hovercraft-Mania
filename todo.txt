@@ -12,15 +12,15 @@ Track features:
 
 TODO:
 -visual effects
--sounds
 -options
--credits
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
+-credits
+-solve issues
+-more tracks
 -general polish, code optimizations & QoL features
 
 Additional features:
 -multiplayer racing
--more tracks
 -more vehicles
 -abilities
 -etc.

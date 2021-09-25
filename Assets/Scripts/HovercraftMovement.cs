@@ -6,6 +6,7 @@ public class HovercraftMovement : MonoBehaviour
 {
     public Rigidbody rb { get; private set; }
     InputController input;
+    EngineSounds sounds;
 
     [SerializeField] float thrust;
     [SerializeField] float turningSpeed;
@@ -42,6 +43,7 @@ public class HovercraftMovement : MonoBehaviour
     {
         input = GetComponent<InputController>();     
         rb = GetComponent<Rigidbody>();
+        sounds = GetComponent<EngineSounds>();
 
         input.Reset += OnReset;
         input.Pause += OnPause;
@@ -57,6 +59,8 @@ public class HovercraftMovement : MonoBehaviour
         steering = input.steering;
         throttle = input.throttle;
         brake = input.brake;
+
+        sounds.PlayBrakingSound(brake > 0);
     }
     
     void FixedUpdate()
