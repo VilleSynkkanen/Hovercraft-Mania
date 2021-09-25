@@ -11,22 +11,14 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
-0.5 release:
+1.0 release:
+-online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -visual effects
 -fix issues
 -options
-
-1.0 release:
--online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -credits
 -more tracks
 -general polish, code optimizations & QoL features
-
-Additional features:
--multiplayer racing
--more vehicles
--abilities
--etc.
 
 Issues:
 -track map could be a bit more accurate (requires adjustments to track center)

@@ -129,7 +129,8 @@ public class HovercraftMovement : MonoBehaviour
         if(frontDistance < bottomOutProtectionPoint || rearDistance < bottomOutProtectionPoint)
             gravityDirection *= bottomOutProtectionPoint / Mathf.Min(frontDistance, rearDistance);
 
-        rb.AddForce(gravityDirection * gravityMultiplier * rb.mass * Time.deltaTime);
+        if (Mathf.Abs(gravityDirection.magnitude) != Mathf.Infinity)
+            rb.AddForce(gravityDirection * gravityMultiplier * rb.mass * Time.deltaTime);
 
 
         // CORRECT PITCH
