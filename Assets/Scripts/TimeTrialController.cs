@@ -64,8 +64,9 @@ public class TimeTrialController : MonoBehaviour
         validLap = false;
         bestSectorsArrayGenerated = false;
         username = "Developer";         // PLACEHOLDER
+        Cursor.visible = false;
 
-        if(LoadLapInfo())
+        if (LoadLapInfo())
         {
             bestSectorsArrayGenerated = true;
             TimeTrialHud.instance.UpdateBestLap();
@@ -94,11 +95,15 @@ public class TimeTrialController : MonoBehaviour
         pauseMenu.SetActive(paused);
         if (paused)
         {
-            eventSystem.SetSelectedGameObject(pauseMenuSelectedButton);
             Time.timeScale = 0;
+            Cursor.visible = true;
+            eventSystem.SetSelectedGameObject(pauseMenuSelectedButton);
         }
         else
+        {
             Time.timeScale = 1;
+            Cursor.visible = false;
+        }
     }
 
     public void Quit()

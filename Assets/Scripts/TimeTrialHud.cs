@@ -30,11 +30,6 @@ public class TimeTrialHud : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        Cursor.visible = false;
-    }
-
     void Update()
     {
         if(TimeTrialController.instance.onLap)
