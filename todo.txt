@@ -15,7 +15,7 @@ TODO:
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -visual effects
 -fix issues
--options
+-options, controls menu
 -credits
 -more tracks
 -general polish, code optimizations & QoL features
@@ -27,7 +27,4 @@ Issues:
 -UI scaling with resolution(?)
 
 Options:
--control rebinding
-	-button config
-	-steering into 2 different buttons
 -visuals
