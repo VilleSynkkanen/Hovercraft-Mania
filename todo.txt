@@ -6,25 +6,20 @@ Core features:
 
 Track features:
 -boost pads
--jump pads
 -slow down pads
 -track may be vertical or upside down
 
 TODO:
-1.0 release:
--online leaderboard (with dev time to challenge, cheat prevention [binary save?])
--visual effects
--fix issues
--options, controls menu
+0.6 release:
+-improve reverse track
+-controls menu + popup
 -credits
--more tracks
+0.8 release:
+-more tracks (2)
+1.0 release:
 -general polish, code optimizations & QoL features
+-online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 
 Issues:
--track map could be a bit more accurate (requires adjustments to track center)
--infinite force on rb error
--bumps in reverse track (change pad locations?)
--UI scaling with resolution(?)
-
-Options:
--visuals
+-occasionally bouncy physics
+-track map inaccuracy (track center should be adjusted)
