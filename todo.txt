@@ -24,12 +24,10 @@ Issues:
 -track map could be a bit more accurate (requires adjustments to track center)
 -infinite force on rb error
 -bumps in reverse track (change pad locations?)
+-UI scaling with resolution(?)
 
 Options:
 -control rebinding
--graphics
-	-presets
-	-resolution
-	-vsync
-	-fullscreen
--sound settings
+	-button config
+	-steering into 2 different buttons
+-visuals
