@@ -177,7 +177,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418196575}
-  m_LocalRotation: {x: 0.05770978, y: -0.000000059604645, z: 0.0000000037252903, w: 0.99833345}
+  m_LocalRotation: {x: 0.057709783, y: -0.000000059604645, z: 0.0000000055879354, w: 0.99833345}
   m_LocalPosition: {x: -0.000006914139, y: 1.75, z: -5.2999983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -608,7 +608,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1569671490}
-  m_LocalRotation: {x: 0.05770978, y: -0.000000059604645, z: 0.0000000037252903, w: 0.99833345}
+  m_LocalRotation: {x: 0.057709783, y: -0.000000059604645, z: 0.0000000055879354, w: 0.99833345}
   m_LocalPosition: {x: -0.000006914139, y: 1.75, z: -5.2999983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1631,8 +1631,8 @@ MonoBehaviour:
   turningSpeed: 130
   dragMultiplier: 1
   turningForce: 50
-  gravityMultiplier: 4000
-  hoverHeight: 2
+  gravityMultiplier: 5000
+  hoverHeight: 3
   rollCorrectionTorque: 200
   rollAngleSmoothingPoint: 10
   pitchCorrectionTorque: 1200
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   brakingDragMultiplier: 0.4
   brakingTurnMultiplier: 1.2
   brakingTurnForceMultiplier: -0.95
-  bottomOutProtectionPoint: 1
+  bottomOutProtectionPoint: 2
   hovercraftFront: {fileID: 4460330203512481426}
   hovercraftRear: {fileID: 3111413583990472682}
   hovercraftLeftSide: {fileID: 1389545758}

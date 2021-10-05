@@ -10,15 +10,26 @@ Track features:
 -track may be vertical or upside down
 
 TODO:
-0.6 release:
--controls menu + popup
--credits
 0.8 release:
 -more tracks (2)
 1.0 release:
 -general polish, code optimizations & QoL features
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
+Itch page:
+-video
+-images
+-credits
 
 Issues:
 -occasionally bouncy physics
 -track map inaccuracy (track center should be adjusted)
+
+Credits:
+
+Strafe: Programming, game design, art, track models
+
+Alexandr z: Hovercraft model (https://assetstore.unity.com/packages/3d/vehicles/dieselpunk-hovercraft-01-pbr-65872)
+Unity Technologies: Terrain textures (https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-tools-sample-asset-pack-145808)
+Music from Mega Music Collection Royalty Free Bundle
+InspectorJ: air brake sound (edited) (https://freesound.org/people/InspectorJ/sounds/361546/)
+Kristian Grundström: engine sounds (https://assetstore.unity.com/packages/audio/sound-fx/engines-123836)

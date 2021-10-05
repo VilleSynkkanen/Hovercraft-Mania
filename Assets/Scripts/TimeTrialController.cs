@@ -70,7 +70,9 @@ public class TimeTrialController : MonoBehaviour
         {
             bestSectorsArrayGenerated = true;
             TimeTrialHud.instance.UpdateBestLap();
-        } 
+        }
+
+        Pause();
     }
 
     void Update()

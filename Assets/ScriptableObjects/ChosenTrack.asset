@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cceb46fd5fac27a40b81fdd1f4b41f10, type: 3}
   m_Name: ChosenTrack
   m_EditorClassIdentifier: 
-  chosenTrack: 0
+  chosenTrack: 2
