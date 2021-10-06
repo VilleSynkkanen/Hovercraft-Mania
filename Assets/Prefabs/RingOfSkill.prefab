@@ -144,6 +144,7 @@ MonoBehaviour:
   pauseMenuSelectedButton: {fileID: 2067627531447539342}
   trackMapImage: {fileID: 21300000, guid: 3db48fa37e487c14bbd6bf1b76d2b568, type: 3}
   trackMapPosMultiplier: 1.12
+  trackMapDimensions: {x: 1112, y: 510}
 --- !u!1 &1497629649
 GameObject:
   m_ObjectHideFlags: 0

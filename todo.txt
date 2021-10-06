@@ -11,7 +11,12 @@ Track features:
 
 TODO:
 0.8 release:
--more tracks (2)
+-track 2 (not started)
+-track 3 (WIP)
+	-main menu
+	-boost pads
+	-reverse version
+	-testing
 1.0 release:
 -general polish, code optimizations & QoL features
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
@@ -22,12 +27,10 @@ Itch page:
 
 Issues:
 -occasionally bouncy physics
--track map inaccuracy (track center should be adjusted)
+-track map inaccuracy (track centers should be adjusted)
 
 Credits:
-
 Strafe: Programming, game design, art, track models
-
 Alexandr z: Hovercraft model (https://assetstore.unity.com/packages/3d/vehicles/dieselpunk-hovercraft-01-pbr-65872)
 Unity Technologies: Terrain textures (https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-tools-sample-asset-pack-145808)
 Music from Mega Music Collection Royalty Free Bundle

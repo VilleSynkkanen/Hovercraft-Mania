@@ -21,6 +21,8 @@ public class TimeTrialController : MonoBehaviour
 
     [SerializeField] Sprite trackMapImage;
     [SerializeField] float trackMapPosMultiplier;
+    [SerializeField] Vector2 trackMapDimensions;
+    [SerializeField] float trackMapRotation;
 
     GameObject player;
 
@@ -37,6 +39,9 @@ public class TimeTrialController : MonoBehaviour
     public float TrackMapPosMultiplier { get => trackMapPosMultiplier; }
 
     public bool bestSectorsArrayGenerated { get; private set; }
+    public Vector2 TrackMapDimensions { get => trackMapDimensions; set => trackMapDimensions = value; }
+    public float TrackMapRotation { get => trackMapRotation; set => trackMapRotation = value; }
+
     bool paused;
 
     string username;

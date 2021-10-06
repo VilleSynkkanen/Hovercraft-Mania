@@ -24,6 +24,8 @@ public class HovercraftHud : MonoBehaviour
         movement = GetComponent<HovercraftMovement>();
         trackMap.sprite = TimeTrialController.instance.TrackMapImage;
         trackMapPosMultiplier = TimeTrialController.instance.TrackMapPosMultiplier;
+        trackMap.GetComponent<RectTransform>().sizeDelta = TimeTrialController.instance.TrackMapDimensions;
+        trackMap.GetComponent<RectTransform>().eulerAngles = new Vector3(0, 0, TimeTrialController.instance.TrackMapRotation);
     }
 
     // Update is called once per frame
