@@ -7,17 +7,11 @@ Core features:
 Track features:
 -boost pads
 -slow down pads
--track may be vertical or upside down
 
 TODO:
-0.8 release:
--track 2 (not started)
--track 3 (WIP)
-	-main menu
-	-boost pads
-	-reverse version
-	-testing
 1.0 release:
+-track 3 reverse version polish (pad placement, etc.)
+-track 2 
 -general polish, code optimizations & QoL features
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 Itch page:
