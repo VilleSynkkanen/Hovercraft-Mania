@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject[] menus;
     [SerializeField] GameObject[] selectedButtons;
+    [SerializeField] GameObject[] selectedButtonsMainMenu;
     [SerializeField] ChosenTrack track;
     [SerializeField] EventSystem eventSystem;
 
@@ -21,10 +22,14 @@ public class MainMenu : MonoBehaviour
     
     public void ActivateMenu(int i)
     {
+        int previousMenu = activeMenu;
         menus[activeMenu].SetActive(false);
         activeMenu = i;
         menus[i].SetActive(true);
-        eventSystem.SetSelectedGameObject(selectedButtons[i]);
+        if(i != 0)
+            eventSystem.SetSelectedGameObject(selectedButtons[i]);
+        else
+            eventSystem.SetSelectedGameObject(selectedButtonsMainMenu[previousMenu - 1]);
     }
 
     public void Play(int trackIndex)

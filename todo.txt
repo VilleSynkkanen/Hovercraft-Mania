@@ -10,10 +10,9 @@ Track features:
 
 TODO:
 1.0 release:
--track 3 reverse version polish (pad placement, etc.)
 -track 2 
--general polish, code optimizations & QoL features
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
+-code optimization, final polish
 Itch page:
 -video
 -images
