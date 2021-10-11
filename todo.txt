@@ -11,6 +11,10 @@ Track features:
 TODO:
 1.0 release:
 -track 2 
+	-boost pads
+	-track map
+	-testing
+	-reverse version	
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -code optimization, final polish
 Itch page:
