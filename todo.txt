@@ -10,8 +10,6 @@ Track features:
 
 TODO:
 1.0 release:
--track 2 reverse version
-	-boost pad directions, changes(?), testing
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -code optimization, final polish
 Itch page:
