@@ -68,7 +68,7 @@ public class TimeTrialController : MonoBehaviour
         onLap = false;
         validLap = false;
         bestSectorsArrayGenerated = false;
-        username = "Developer";         // PLACEHOLDER
+        username = "User";         // PLACEHOLDER
         Cursor.visible = false;
 
         if (LoadLapInfo())

@@ -9,13 +9,17 @@ Track features:
 -slow down pads
 
 TODO:
-1.0 release:
--online leaderboard (with dev time to challenge, cheat prevention [binary save?])
--code optimization, final polish
 Itch page:
 -video
 -images
 -credits
+-etc.
+Git page
+-readme
+
+Later additions:
+-online leaderboard (with dev time to challenge, cheat prevention [binary save?])
+-more polish
 
 Issues:
 -occasionally bouncy physics
