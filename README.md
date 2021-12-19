@@ -2,7 +2,7 @@
  
 ## General info
 
-- Hovercraft Mania is a hovercraft time trial game
+- Hovercraft Mania is a hovercraft time trial game.
 - For Windows, Mac & Linux.
 - Made with Unity.
 
