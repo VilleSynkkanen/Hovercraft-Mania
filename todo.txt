@@ -8,11 +8,7 @@ Track features:
 -boost pads
 -slow down pads
 
-TODO:
-Git page
--readme
-
-Later additions:
+Potential additions:
 -online leaderboard (with dev time to challenge, cheat prevention [binary save?])
 -more polish
 
@@ -21,11 +17,3 @@ Issues:
 -track map inaccuracy (track centers should be adjusted)
 -laps might not be registered (rare)
 	-hitting the same sector hitbox multiple times???
-
-Credits:
-
-Alexandr z: Hovercraft model (https://assetstore.unity.com/packages/3d/vehicles/dieselpunk-hovercraft-01-pbr-65872)
-Unity Technologies: Terrain textures (https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-tools-sample-asset-pack-145808)
-Music from Mega Music Collection Royalty Free Bundle
-InspectorJ: air brake sound (edited) (https://freesound.org/people/InspectorJ/sounds/361546/)
-Kristian Grundström: engine sounds (https://assetstore.unity.com/packages/audio/sound-fx/engines-123836)
