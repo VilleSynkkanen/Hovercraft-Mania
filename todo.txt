@@ -9,11 +9,6 @@ Track features:
 -slow down pads
 
 TODO:
-Itch page:
--video
--images
--credits
--etc.
 Git page
 -readme
 
@@ -24,9 +19,11 @@ Later additions:
 Issues:
 -occasionally bouncy physics
 -track map inaccuracy (track centers should be adjusted)
+-laps might not be registered (rare)
+	-hitting the same sector hitbox multiple times???
 
 Credits:
-Strafe: Programming, game design, art, track models
+
 Alexandr z: Hovercraft model (https://assetstore.unity.com/packages/3d/vehicles/dieselpunk-hovercraft-01-pbr-65872)
 Unity Technologies: Terrain textures (https://assetstore.unity.com/packages/2d/textures-materials/nature/terrain-tools-sample-asset-pack-145808)
 Music from Mega Music Collection Royalty Free Bundle
